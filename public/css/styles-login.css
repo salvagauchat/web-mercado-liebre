@@ -139,13 +139,8 @@ footer{
         margin: 0;
         padding: 0;
     }
-    .buscar{
-        width: 30%;
-        height: 50px;
-        text-align: center;
-        position: relative;
-        display: block;
-        
+    .buscar-div{
+        width: 33%;
     }
     .burger-menu{
         display: none;
@@ -160,8 +155,9 @@ footer{
     header nav li{
         margin: 0 10px;
     }
-
-
+    .buscar-div i{
+        display: block;
+    }
     /* ++++++ MAIN ++++*/
 }
 
