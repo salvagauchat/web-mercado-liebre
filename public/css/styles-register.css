@@ -1,0 +1,235 @@
+*{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    margin: 10px;
+    font-size: 12px;
+}
+/*************** HEADER ******************************************/
+header{
+    background-color: #EAC926;
+    width: 100%;
+    padding: 10px;
+}
+.header-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.buscar{
+    width: 50%;
+}
+.header-logo{
+    width: 50%;
+} 
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    font-size: 170%;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+.burger-menu i{
+    background-color: #03264C ;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+header nav{
+    display: none;
+}
+    
+header ul li{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+header nav ul a{
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+.buscar input {
+    width: 50%;
+    margin: 20px 10px; 
+}
+
+.lupa {
+    background-color: white;
+    border-radius: 4px;
+    border: solid thin;
+}
+
+/************* MAIN formularios *************************************************/
+.creacion-formulario{
+    padding: 20px 15px;
+    background-color: #ebebeb;
+}
+.control-form{
+    margin-bottom: 15px;
+    margin-left: 2px;
+    
+}
+.control-form label{
+    margin-bottom: 15px;
+    font-style: normal;
+    display: block;
+}
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+.radios{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.checkbox label{
+    margin: 0;
+}
+.checkbox input{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+.boton-formulario{
+    background-color: rgb(24, 121, 88);
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* *********** FOTERRRR ****************************************************/
+
+footer{
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    margin: 0;
+}
+.sect-footer{
+    text-align: center;
+    width: 70%;
+    max-width: 300px;
+    line-height: 20px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.credito i{
+    font-size: 30px;
+    color: rgb(64, 99, 196);
+}
+.copy{
+    margin-left: 15px;
+}
+
+@media (min-width: 795px){
+    /* ++++++HEADER ++++*/
+    .header-1{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-logo{
+        width: 40%;
+        max-width: 250px;
+    }
+    .copy-header{
+        width: 30%;
+        max-width: 300px;
+        text-align: right;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .buscar{
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        display: block;
+        
+    }
+    .burger-menu{
+        display: none;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav li{
+        margin: 0 10px;
+    }
+
+
+    /* ++++++ MAIN ++++*/
+}
+
+@media (min-width: 1200px){
+    /* ++++++HEADER ++++*/
+    .header-logo{
+        width: 250px;
+    }
+    header nav, .header-1{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .header-1{
+        align-items: center;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400px;
+        margin: 0;
+    }
+    header nav{
+        margin-top: 40px;
+    }
+    header nav li{
+        margin: 0 10px;
+    }
+    header nav a{
+        font-size: 16px;
+    }
+
+    header ul{
+        display: block;
+    }
+}

@@ -1,0 +1,278 @@
+*{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    margin: 10px;
+    font-size: 12px;
+}
+/*************** HEADER ******************************************/
+header{
+    background-color: #EAC926;
+    width: 100%;
+    padding: 10px;
+}
+.header-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.buscar{
+    width: 50%;
+}
+.header-logo{
+    width: 50%;
+} 
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    font-size: 170%;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+.burger-menu i{
+    background-color: #03264C ;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+header nav{
+    display: none;
+}
+    
+header ul li{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+header nav ul a{
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+.buscar input {
+    width: 50%;
+    margin: 20px 10px; 
+}
+
+.lupa {
+    background-color: white;
+    border-radius: 4px;
+    border: solid thin;
+}
+
+.banner{
+    width: 100%;
+}
+
+/************* MAIN *************************************************/
+
+main{
+    background-color: #ebebeb;
+    width: 90%;
+    margin: auto;
+}
+
+.sect-img{
+    width: 100%;
+}
+h2{
+    font-size: 24px;
+    display: block;
+}
+section{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+article{
+    margin-top: 15px;
+    max-width: 300px;
+    border-top: solid 1px #ebebeb;
+}
+.precios{
+    font-size: 18px;
+    padding: 0px 0px 0px 10px;
+    width: 30%;
+    padding-right: 5px;
+}
+.descuentos-descrip{
+    font-size: 16px;
+    padding: 10px 0px 10px 10px;
+    display: none;
+}
+.descuentos{
+    font-size: 16px;
+    padding: 2px 0px 0px 0px;
+    color: #2f801f96;
+    font-weight: bold;
+    width: 70%;
+    padding-left: 5px;
+}
+.info-sin-icono{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    
+}
+
+.info-prod{
+    background-color: white;
+    width: 100%;
+    
+}
+.envio-icono i{
+    color: #44b32e;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    left: 85%;
+    top: -15px;
+
+}
+
+/* *********** FOTERRRR ****************************************************/
+
+footer{
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    margin: 0;
+}
+.sect-footer{
+    text-align: center;
+    width: 70%;
+    max-width: 300px;
+    line-height: 20px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.credito i{
+    font-size: 30px;
+    color: rgb(64, 99, 196);
+}
+.copy{
+    margin-left: 15px;
+}
+
+
+ /* ************Media queries************************************************ */
+ 
+@media (min-width: 795px){
+    /* ++++++HEADER ++++*/
+    .header-1{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-logo{
+        width: 40%;
+        max-width: 250px;
+    }
+    .copy-header{
+        width: 30%;
+        max-width: 300px;
+        text-align: right;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .buscar{
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        display: block;
+        
+    }
+    .burger-menu{
+        display: none;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav li{
+        margin: 0 10px;
+    }
+
+
+    /* ++++++ MAIN ++++*/
+    .descuentos-descrip{
+        display: inline-block;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    /* ++++++ FOOTER ++++*/
+
+}
+
+
+
+@media (min-width: 1200px){
+    .header-logo{
+        width: 250px;
+    }
+    header nav, .header-1{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .header-1{
+        align-items: center;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400px;
+        margin: 0;
+    }
+    header nav{
+        margin-top: 40px;
+    }
+    header nav li{
+        margin: 0 10px;
+    }
+    header nav a{
+        font-size: 16px;
+    }
+
+    header ul{
+        display: block;
+    }
+    .descuentos-descrip{
+        display: block;
+    }
+}
