@@ -22,9 +22,10 @@
     <header>
         <div class="header-1">
             <img class="header-logo" src="/images/logo-mercado-liebre.svg" alt="Logo" width="50%">
-            <div class="buscar">
-                <input type="text" placeholder="Buscar productos, marcas" required>
-                <button type="submit" class="lupa"><i class="fas fa-search"></i></button>
+            <div class="buscar-div">
+                <label for=""></label>
+                <input type="text" placeholder="Buscar productos, marcas y más" required class="buscar">
+                <i class="fas fa-search"></i>
             </div>
             <h2 class="copy-header">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
@@ -43,45 +44,46 @@
             </ul>
             <ul>
                 <li><a href="register.html">Creá tu cuenta</a> <i class="fa-solid fa-id-card"></i></li>
-                <li><a href="#Ingresar">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li><a href="login.html">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i></li>
                 <li><a href="#MisCompras">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h2 class="titulo-main">Formulario de Registro</h2>
         <form action="" class="creacion-formulario">
             <div class="control-form">
-                <label for="nombre">Nombre y apellido</label>
-                <input type="text" name="name" id="nombre" class="control">
+                <label for="nombre"></label>
+                <input type="text" name="name" id="nombre" class="control" placeholder="Nombre y apellido">
             </div>
 
             <div class="control-form">
-                <label for="">Nombre de usuario</label>
-                <input type="text" name="nameUser" id="" class="control">
+                <label for=""></label>
+                <input type="text" name="nameUser" id="" class="control" placeholder="Nombre de usuario">
             </div>
 
             <div class="control-form">
-                <label for="fecha">Fecha de nacimiento</label>
+                <label for="fecha" class="titulos-form">Fecha de nacimiento</label>
                 <input type="date" name="fechaNaci" id="fecha" class="control">
             </div>
 
             <div class="control-form">
-                <label for="domicilio">Domicilio</label>
-                <input type="text" name="domic" id="domicilio" class="control">
+                <label for="domicilio"></label>
+                <input type="text" name="domic" id="domicilio" class="control" placeholder="Domicilio">
             </div>
 
             <div class="control-form">
-                <label for="perfil">Perfil de usuario</label>
+                <label for="perfil" class="titulos-form">Perfil de usuario</label>
                 <div class="radios">
-                    <label for="">Comprador<input type="radio" name="perfil" id="perfil" value="comprador" > </label>
-                    <label for="">Vendedor<input type="radio" name="perfil" id="perfil" value="vendedor" > </label>
+                    <label for=""><input type="radio" name="perfil" id="perfil" value="comprador">Comprador </label>
+                    <label for=""><input type="radio" name="perfil" id="perfil" value="vendedor">Vendedor</label>
                 </div>
 
             </div>
 
             <div class="control-form">
-                <label for="categorias">Interes</label>
+                <label for="categorias" class="titulos-form">Interes</label>
                 <div class="checkbox">
                     <input type="checkbox" name="categorias" id="categorias">
                     <label for="">Electro</label>
@@ -105,27 +107,27 @@
             </div>
 
             <div class="control-form">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="control">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" class="control" placeholder="Email">
             </div>
 
             <div class="control-form">
-                <label for="foto">Foto de usuario</label>
-                <input type="file" name="foto" id="foto" class="control">
+                <label for="foto" class="titulos-form">Foto de usuario</label>
+                <input type="file" name="foto" id="foto" accept=".jpg" class="control">
             </div>
             <div class="control-form">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="" id="contraseña" class="control">
+                <label for="contraseña"></label>
+                <input type="password" name="" id="contraseña" class="control" placeholder="Contraseña">
             </div>
             <div class="control-form">
-                <label for="confirpass">Confirmar contraseña</label>
-                <input type="password" name="" id="confirpass" class="control">
+                <label for="confirpass"></label>
+                <input type="password" name="" id="confirpass" class="control" placeholder="Confirmar contraseña">
             </div>
-            
 
-            <button type="submit" class="boton-formulario" boton-formulario>Enviar</button>
-            <button type="reset" class="boton-formulario" boton-formulario>Borrar</button>
-
+            <div class="botones">
+                <button type="submit" class="boton-formulario" style="margin-right: 40px;">Crear usuario</button>
+                <button type="reset" class="boton-formulario">Borrar</button>
+            </div>
 
         </form>
 
