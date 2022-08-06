@@ -26,6 +26,7 @@ header{
     width: 50%;
     margin: auto;
     display: block;
+    position: relative;
 }
 .buscar{
     width: 90%;
@@ -170,7 +171,7 @@ footer{
 }
 .sect-footer{
     text-align: center;
-    width: 70%;
+    width: 90%;
     max-width: 300px;
     line-height: 20px;
     margin: auto;
@@ -277,6 +278,8 @@ footer{
     header ul{
         display: block;
     }
+
+    /* MAINNN */
     .descuentos-descrip{
         display: block;
     }

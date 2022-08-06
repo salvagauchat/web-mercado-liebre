@@ -26,6 +26,7 @@ header{
     width: 50%;
     margin: auto;
     display: block;
+    position: relative;
 }
 .buscar{
     width: 90%;
@@ -85,8 +86,47 @@ header nav ul a{
 }
 
 /************* MAIN formularios *************************************************/
-
-
+.titulo-main{
+    text-align: center;
+    padding-top: 15px;
+}
+.creacion-formulario{
+    padding: 10px 15px 20px 15px;
+    background-color: #ebebeb;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; 
+}
+.control-form{
+    margin-bottom: 25px;
+    margin-left: 2px;
+    width: 100%;
+    font-size: small;
+    
+}
+.control-form label{
+    margin-bottom: 15px;
+    display: block;
+}
+.control{
+    width: 100%;
+    padding: 8px 8px;
+    background-color: none;
+    border: none;
+    border-radius: 5px;
+}
+.boton-formulario{
+    background-color: rgb(64, 99, 196);
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 30px;
+}
 
 
 
@@ -100,7 +140,7 @@ footer{
 }
 .sect-footer{
     text-align: center;
-    width: 70%;
+    width: 90%;
     max-width: 300px;
     line-height: 20px;
     margin: auto;
@@ -158,7 +198,6 @@ footer{
     .buscar-div i{
         display: block;
     }
-    /* ++++++ MAIN ++++*/
 }
 
 @media (min-width: 1200px){
