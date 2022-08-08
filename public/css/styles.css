@@ -7,14 +7,16 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
-    margin: 10px;
     font-size: 12px;
 }
 /*************** HEADER ******************************************/
 header{
     background-color: #EAC926;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 .header-1{
     display: flex;
@@ -45,14 +47,24 @@ header{
 
 .header-logo{
     width: 50%;
+    animation: aumentar 600ms ease-in infinite alternate;
 } 
+@keyframes aumentar{
+    0%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
 .copy-header{
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     font-size: 170%;
     margin-bottom: 10px;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 .burger-menu i{
@@ -87,6 +99,7 @@ header nav ul a{
 
 .banner{
     width: 100%;
+    margin-top: 212px;
 }
 
 /************* MAIN *************************************************/
