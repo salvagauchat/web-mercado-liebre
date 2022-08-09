@@ -7,19 +7,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
-    margin: 10px;
-    font-size: 12px;
-}
-/*************** HEADER ******************************************/
-*{
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
     font-size: 12px;
 }
 /*************** HEADER ******************************************/
@@ -114,6 +101,7 @@ header nav ul a{
 .titulo-main{
     text-align: center;
     padding-top: 15px;
+    margin-top: 212px;
 }
 .creacion-formulario{
     padding: 10px 15px 20px 15px;
