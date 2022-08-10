@@ -52,7 +52,7 @@
 
     <main>
         <h2 class="titulo-main">Formulario de Registro</h2>
-        <form action="/" post="get" class="creacion-formulario">
+        <form id="formulario" action="/" post="get" class="creacion-formulario">
             <div class="control-form">
                 <label for="nombre"></label>
                 <input type="text" name="name" id="nombre" class="control" placeholder="Nombre y apellido">
@@ -60,7 +60,7 @@
 
             <div class="control-form">
                 <label for=""></label>
-                <input type="text" name="nameUser" id="" class="control" placeholder="Nombre de usuario">
+                <input type="text" name="nameUser" id="nombre-usuario" class="control" placeholder="Nombre de usuario">
             </div>
 
             <div class="control-form">
@@ -121,11 +121,12 @@
             </div>
             <div class="control-form">
                 <label for="confirpass"></label>
-                <input type="password" name="" id="confirpass" class="control" placeholder="Confirmar contraseña">
+                <input type="password" name="" id="confircontra" class="control" placeholder="Confirmar contraseña">
             </div>
 
             <div class="botones">
-                <button type="submit" class="boton-formulario" style="margin-right: 40px;">Crear usuario</button>
+                <button type="submit" class="boton-formulario" style="margin-right: 40px;" id="boton">Crear
+                    usuario</button>
                 <button type="reset" class="boton-formulario">Borrar</button>
             </div>
 
@@ -159,3 +160,30 @@
             <h6>Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
         </div>
     </footer>
+
+
+
+    <script>
+
+        const formulario = document.getElementById('formulario'); //ahora este formulario esta guardado en la variable.
+
+        formulario.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            console.log(formulario.nombre.value); //para mostrar en consola el nombre ingresado por el usuario.
+
+            if (formulario.nombre.value.length < 2) {
+                console.log("no se ingreso un nombre valido") //si el usuario ingresa un nombre menor a dos letras salta error
+                alert("nombre no válido")
+            }
+            else if(formulario.contraseña.value.length < 8){
+                alert("contraseña no válida, al menos 8 caracteres")
+            }
+            else if(formulario.confircontra.value != formulario.contraseña.value){
+                alert("las contraseñas deben coincidir")
+            }
+            else {
+                evento.preventDefault(); //es para no recargar la pagina cuando enviamos el formulario.
+                alert("El formulario está siendo enviado!");
+            }
+        });
+    </script>

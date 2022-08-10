@@ -202,6 +202,10 @@ footer{
 .credito i{
     font-size: 30px;
     color: rgb(64, 99, 196);
+    transition: all 300ms;
+}
+.credito i:hover{
+   color: #EAC926;
 }
 .copy{
     margin-left: 15px;
